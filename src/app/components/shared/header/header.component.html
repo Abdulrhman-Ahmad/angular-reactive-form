@@ -1,11 +1,11 @@
 <div class="container header">
     <header class="d-flex justify-content-center py-3">
       <ul class="nav nav-pills">
-        <li class="nav-item"><a  class="nav-link active" aria-current="page">Home</a></li>
-        <li class="nav-item"><a  class="nav-link ">Features</a></li>
-        <li class="nav-item"><a  class="nav-link ">Pricing</a></li>
-        <li class="nav-item"><a  class="nav-link ">Sign Up</a></li>
-        <li class="nav-item"><a  class="nav-link ">About</a></li>
+        <li class="nav-item"><button  class="btn" [routerLink]="['home']" [routerLinkActive]="['active']" >Home</button></li>
+        <li class="nav-item"><button  class="btn">Features</button></li>
+        <li class="nav-item"><button  class="btn">Pricing</button></li>
+        <li class="nav-item"><button  class="btn" [routerLink]="['signup']" [routerLinkActive]="['active']">Sign Up</button></li>
+        <li class="nav-item"><button  class="btn">About</button></li>
       </ul>
     </header>
 </div>

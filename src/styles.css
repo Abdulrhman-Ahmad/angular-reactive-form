@@ -1,1 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
+/* You can add global styles to this file, and also import other style files */
+:root {
+    --primary: #3498db; /* Custom primary color */
+    --secondary: #2ecc71; /* Custom secondary color */
+    --success: #27ae60; /* Custom success color */
+    --info: #3498db; /* Custom info color */
+    --warning: #f39c12; /* Custom warning color */
+    --danger: #e74c3c; /* Custom danger color */
+    --light: #ecf0f1; /* Custom light color */
+    --dark: #c2dcf7; /* Custom dark color */
+  }
