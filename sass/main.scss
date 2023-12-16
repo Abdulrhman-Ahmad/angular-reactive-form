@@ -1,11 +1,11 @@
-$btn-hover-bg-shade-amount:         50%;           // Darken
+$btn-hover-bg-shade-amount:         30%;           // Darken
 $btn-hover-bg-tint-amount:          50%;            // Whiten
 
-$btn-active-bg-shade-amount:      40%;
-$btn-active-bg-tint-amount:       40%;
+$btn-active-bg-shade-amount:      20%;
+$btn-active-bg-tint-amount:       20%;
 
 $focus-ring-color:     #392467;
-
+$form-check-input-checked-bg-color: #392467;
 
 @import "../node_modules/bootstrap/scss/_functions";
 @import"../node_modules/bootstrap/scss/_variables";
