@@ -1,5 +1,5 @@
 <div class="d-flex justify-content-center align-items-center h-100 my-2">
-  <div class="border rounded-2 py-4 px-4 w-50 bg-body-secondary">
+  <div class="border rounded-2 py-4 px-4 w-50 bg-a4">
 
     <!-- We're working on a standalone component so we have to import reactiveformsmodule to use it -->
     <form [formGroup]="mainForm" (ngSubmit)="submit()" >
@@ -29,21 +29,21 @@
       </div>
 
       <!-- Phones (Form Array) -->
-      <div formArrayName="phones" id="FormArrayContainer">
+      <div formArrayName="phones" id="FormArrayContainer" class="px-2 py-2">
         <ng-container *ngFor="let item of Phones.controls; let i = index">
           <label for="phoneInput" class="form-label">Phone {{i}}</label>
           <input type="number" class="form-control" id="phoneInput" formControlName="{{i}}">
         </ng-container>
       </div>
-      <button type="button" class="btn btn-success my-1" (click)="addPhone()">New Phone</button>
+      <button type="button" class="btn btn-a3 my-1" (click)="addPhone()">New Phone</button>
 
       <!-- Agree to Policy -->
       <div class="mb-3 form-check">
-        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+        <input type="checkbox" class="form-check-input text-a2 bg-a3 " id="exampleCheck1">
         <label class="form-check-label" for="exampleCheck1">Policy Agreement</label>
       </div>
 
-      <button type="submit" class="btn btn-success py-3 w-50">Submit</button>
+      <button type="submit" class="btn btn-a3 py-3 w-50">Submit</button>
 
     </form>
   </div>
