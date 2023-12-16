@@ -1,0 +1,32 @@
+$btn-hover-bg-shade-amount:         50%;           // Darken
+$btn-hover-bg-tint-amount:          50%;            // Whiten
+
+$btn-active-bg-shade-amount:      40%;
+$btn-active-bg-tint-amount:       40%;
+
+$focus-ring-color:     #392467;
+
+
+@import "../node_modules/bootstrap/scss/_functions";
+@import"../node_modules/bootstrap/scss/_variables";
+
+$customtheme:(
+    "c1":#392467,
+    "c2":#5D3587,
+    "c3":#67729D,
+    "c4":#FFD1E3,
+    
+    "a1":#161A30,
+    "a2":#392467,
+    "a33":#392467,
+    "a3":#B6BBC4,
+    "a4":#d4d4d4,
+    "a5":#bfc3dd,
+    "bodycolor": #fde3ed, 
+);
+
+$theme-colors:map-merge($customtheme , $theme-colors );
+
+
+// Import Bootstrap styles
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
