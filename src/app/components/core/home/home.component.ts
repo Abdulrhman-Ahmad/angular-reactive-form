@@ -8,7 +8,6 @@ import { HoverDirective } from 'src/app/directives/hovering/hover.directive';
   imports: [CommonModule, HoverDirective],
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css'],
-  encapsulation: ViewEncapsulation.Emulated
 })
 export class HomeComponent {
 
