@@ -2,12 +2,12 @@ import { Directive, ElementRef, HostListener } from '@angular/core';
 
 @Directive({
   selector: '[appHover]',
-  standalone: true
+  standalone: true,
 })
 export class HoverDirective {
 
   constructor(private el: ElementRef) {
-    el.nativeElement.style.transitionDuration = '1s'
+    el.nativeElement.style.transitionDuration = '300ms'
   }
 
   @HostListener('mouseover') mouseover(){
@@ -17,5 +17,4 @@ export class HoverDirective {
   @HostListener('mouseout') mouseout(){
     this.el.nativeElement.style.backgroundColor = null
   }
-
 }

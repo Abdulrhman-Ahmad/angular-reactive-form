@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ViewEncapsulation } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { HoverDirective } from 'src/app/directives/hovering/hover.directive';
 
@@ -6,13 +6,9 @@ import { HoverDirective } from 'src/app/directives/hovering/hover.directive';
   selector: 'app-home',
   standalone: true,
   imports: [CommonModule, HoverDirective],
-  hostDirectives:[
-    {
-      directive: HoverDirective
-    }
-  ],
   templateUrl: './home.component.html',
-  styleUrls: ['./home.component.css']
+  styleUrls: ['./home.component.css'],
+  encapsulation: ViewEncapsulation.Emulated
 })
 export class HomeComponent {
 
