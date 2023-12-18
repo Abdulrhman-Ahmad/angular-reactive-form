@@ -8,6 +8,7 @@ export class HoverDirective {
 
   constructor(private el: ElementRef) {
     el.nativeElement.style.transitionDuration = '300ms'
+    
   }
 
   @HostListener('mouseover') mouseover(){
