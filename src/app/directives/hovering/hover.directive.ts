@@ -1,10 +1,13 @@
-import { Directive, ElementRef, HostListener } from '@angular/core';
+import { Directive, ElementRef, HostBinding, HostListener } from '@angular/core';
 
 @Directive({
   selector: '[appHover]',
   standalone: true,
 })
 export class HoverDirective {
+
+  @HostBinding('style.backgrounColor') backgroundColor!: string;
+  @HostBinding('style.transitionDuration') Duration!: string;
 
   constructor(private el: ElementRef) {
     el.nativeElement.style.transitionDuration = '300ms'

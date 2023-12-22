@@ -1,12 +1,14 @@
 import { CommonModule } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 import { FormArray, FormBuilder, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
+import { IngenDirective } from 'src/app/directives/ingen/ingen.directive';
 import { SignuphoverDirective } from 'src/app/directives/signuphover/signuphover.directive';
 
 @Component({
   selector: 'app-signup',
   standalone: true,
   imports: [CommonModule, ReactiveFormsModule, SignuphoverDirective],
+  hostDirectives:[IngenDirective],
   templateUrl: './signup.component.html',
   styleUrls: ['./signup.component.css']
 })

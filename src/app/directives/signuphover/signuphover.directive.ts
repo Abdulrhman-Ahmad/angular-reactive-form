@@ -1,4 +1,4 @@
-import { Directive, ElementRef, HostListener } from '@angular/core';
+import { Directive, ElementRef, HostBinding, HostListener } from '@angular/core';
 
 @Directive({
   selector: '[appSignuphover]',
@@ -6,18 +6,22 @@ import { Directive, ElementRef, HostListener } from '@angular/core';
 })
 export class SignuphoverDirective {
 
+  @HostBinding('style.backgroundColor') backgroundColor!: string | null;
+  @HostBinding('style.borderColor') borderColor!: string | null;
+  @HostBinding('style.transitionDuration') Duration!: string | null;
+
   constructor(private el: ElementRef) { 
-    el.nativeElement.style.transitionDuration = '200ms'
+    this.Duration = '300ms'    
   }
 
   @HostListener('mouseover') onMouseOver(){
-    this.el.nativeElement.style.backgroundColor = '#d10202';
-    this.el.nativeElement.style.borderColor = '#d10202'
+    this.backgroundColor = '#d10202';
+    this.borderColor = '#d10202'
   }
 
   @HostListener('mouseout') onMouseOut(){
-    this.el.nativeElement.style.backgroundColor = null;
-
+    this.backgroundColor = null;
+    this.borderColor = null;
   }
 
 }
